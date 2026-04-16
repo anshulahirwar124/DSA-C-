@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KidLearn – My Assignments</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f6fa;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background: #ffffff;
+            padding: 15px 25px;
+            border-radius: 10px;
+        }
+
+        .header a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #555;
+        }
+
+        .welcome {
+            margin: 20px 0;
+            background: #6c5ce7;
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .box span {
+            display: block;
+            font-size: 14px;
+            color: gray;
+        }
+
+        .completed { background: #dff9fb; }
+        .progress { background: #ffeaa7; }
+        .points { background: #fab1a0; }
+
+        .title {
+            margin: 25px 0 10px;
+        }
+
+        .assignments {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 18px;
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .card h3 {
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            color: gray;
+            font-size: 14px;
+        }
+
+        .status {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            color: white;
+        }
+
+        .status.new { background: #0984e3; }
+        .status.working { background: #e17055; }
+        .status.done { background: #00b894; }
+
+        .time {
+            margin: 10px 0;
+            font-size: 13px;
+        }
+
+        button {
+            margin-top: 12px;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 20px;
+            background: #6c5ce7;
+            color: white;
+            cursor: pointer;
+        }
+
+        .view {
+            background: #00b894;
+        }
+
+        .footer-msg {
+            margin-top: 30px;
+            text-align: center;
+            background: #ffeaa7;
+            padding: 25px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>KidLearn</h2>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Assignments</a>
+            <a href="#">Profile</a>
+        </div>
+    </div>
+
+    <div class="welcome">
+        <h1>Hey Champ! Ready to Learn? ⭐</h1>
+        <p>You have new assignments waiting for you.</p>
+    </div>
+
+    <div class="stats">
+        <div class="box">6 <span>Total</span></div>
+        <div class="box completed">1 <span>Completed</span></div>
+        <div class="box progress">2 <span>In Progress</span></div>
+        <div class="box points">150 <span>Points</span></div>
+    </div>
+
+    <h2 class="title">My Assignments</h2>
+
+    <div class="assignments">
+
+        <div class="card">
+            <h3>Math Practice</h3>
+            <p>Mathematics</p>
+            <span class="status new">New</span>
+            <button>Start Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Story Writing</h3>
+            <p>English</p>
+            <span class="status working">Working</span>
+            <p class="time">In 3 days</p>
+            <button>Start Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Science Project</h3>
+            <p>Science</p>
+            <span class="status new">New</span>
+            <button>Start Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Drawing Activity</h3>
+            <p>Art</p>
+            <span class="status done">Completed</span>
+            <button class="view">View Details</button>
+        </div>
+
+        <div class="card">
+            <h3>Hindi Poem</h3>
+            <p>Hindi</p>
+            <span class="status working">Working</span>
+            <p class="time">In 2 days</p>
+            <button>Start Now</button>
+        </div>
+
+    </div>
+
+    <div class="footer-msg">
+        ⭐⭐⭐
+        <h3>You're doing amazing!</h3>
+        <p>Complete 2 more assignments to unlock a special badge!</p>
+    </div>
+
+</body>
+</html>
